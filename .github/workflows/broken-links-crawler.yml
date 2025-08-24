@@ -65,7 +65,7 @@ jobs:
 
       - name: echo workflow_dispatch branch name et cetera
         run: |
-          echo workflow_dispatch - runhing on site ${{ steps.extract_branch.outputs.site }}
+          echo workflow_dispatch - running on site ${{ steps.extract_branch.outputs.site }}
           echo workflow_dispatch - running on branch ${{ steps.extract_branch.outputs.branch }}
           echo workflow_dispatch - running on version ${{ steps.extract_branch.outputs.version }}
         if: github.event_name != 'pull_request' && github.event_name != 'push'
